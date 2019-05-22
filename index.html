@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clash Royale Chest Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="vRANPOdV0SgYBGMQQgKhYbmfVfJgcHEOZa45BzHEeKE" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <style type="text/css">
+        .list-group-item.active {
+            background-color: orange;
+        }
+
+        .normal {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list-group">
+        <a href="https://ctforcr.firebaseapp.com/privacyPolicy.html" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+                <h2 class="mb-1">Update To Privacy Policy</h2>
+            </div>
+            <p class="mb-1">We Have Updated Our Privacy Policy to new GDPR Requirments.... For Any Bugs, Suggestion Or Feedback
+                <object>
+                    <a class="normal" href="https://goo.gl/forms/CFta6gkzcJfE0E1Q2">click here</a>
+                </object>
+            </p>
+        </a>
+        <a id="tut" href="/help-vid/help.mp4" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h2 class="mb-1">Unable to use the App?</h2>
+            </div>
+            <p class="mb-1">Check out in-app Instructions or,
+                <u style="color: blue">click here</u> for Help Video!</p>
+        </a>
+        <a href="http://supercell.com/en/fan-content-policy/" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h2 class="mb-1">Welcome To CR Chest Cycle Tracker</h2>
+            </div>
+            <p class="mb-1">Chest Tracker for Clash Royale is a quick and simple way to check your chest cycle.
+                <br>
+                <br> App Features:
+                <br> - Detailed Player Profile
+                <br> - Detailed Clan Profile
+                <br> - Detailed Clan War
+                <br> - Top Decks
+                <br> - Top Players
+                <br> - Top Clans
+                <br>
+                <br> This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell
+                is not responsible for it. For more information see Supercell's Fan Content Policy.
+                <br>
+            </p>
+        </a>
+    </div>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.BOTTOM_RIGHT }, 'google_translate_element');
+        }
+
+        const availLang = ["es","pt","de","fr","ru","it"]
+        if (availLang.includes( window.location.hash.split('|')[1].substr(0, 2) ))
+            document.getElementById("tut").href = "/help-vid/help-" + window.location.hash.split('|')[1].substr(0, 2) + ".mp4"
+        else if (window.location.hash.split('|')[1].substr(0, 2)!== "en")
+            document.getElementById("tut").href = "https://ctforcr.firebaseapp.com/help.html" + window.location.hash
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

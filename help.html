@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Help Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w3-container">
+        <h2>How To Use?</h2>
+        <p>Follow the Steps Properly To Use The App!</p>
+    </div>
+
+    <div class="w3-content" style="max-width:800px">
+        <div class="w3-display-container mySlides w3-animate-top">
+            <img src="guide-1.png" style="width:100%">
+            <div class="w3-display-bottomright w3-small w3-container w3-padding-16 w3-black">
+                Launch <span class="notranslate">Clash Royale</span> and tap your name
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides w3-animate-top">
+            <img src="guide-2.jpg" style="width:100%">
+            <div class="w3-display-bottomright w3-small w3-container w3-padding-16 w3-black">
+                Find your Player Tag under your name
+            </div>
+        </div>
+
+        <div class="w3-display-container mySlides w3-animate-top">
+            <img src="guide-3.gif" style="width:100%">
+            <div class="w3-display-topright w3-small w3-container w3-padding-16 w3-black">
+                Type your Player Tag in the search field and click the Search button
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-center">
+        <div class="w3-section">
+            <button class="w3-button w3-light-grey notranslate" onclick="plusDivs(-1)">❮ Prev</button>
+            <button class="w3-button w3-light-grey notranslate" onclick="plusDivs(1)">Next ❯</button>
+        </div>
+        <button class="w3-button demo" onclick="currentDiv(1)">1</button>
+        <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+        <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-red", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-red";
+        }
+    </script>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.BOTTOM_RIGHT }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
