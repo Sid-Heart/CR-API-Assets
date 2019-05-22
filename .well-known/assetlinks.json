@@ -1,0 +1,13 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "in.sidheart.clashroyalechestcycle",
+    "sha256_cert_fingerprints":
+    [
+    	"A4:CA:EF:80:65:A7:A5:A0:A3:5D:69:DC:F1:61:85:03:11:C9:73:E3:0A:76:D7:2F:B9:78:20:18:B2:57:8A:22",
+      "78:F1:30:E6:D1:28:FC:73:06:0C:57:C0:0A:26:B9:21:22:B3:BE:5F:CE:27:96:F5:2A:42:E3:E8:99:F6:9B:97",
+      "35:61:ED:0E:51:D2:D5:49:63:F3:A3:60:85:EC:7A:B3:39:7B:3E:65:B2:6E:36:FC:49:14:4E:2D:D0:D1:01:F0"
+    ]
+  }
+}]
